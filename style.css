@@ -1,0 +1,160 @@
+img{
+    width: 1510px; 
+    height: 890px;
+   
+  
+}
+.image-container {
+    position: relative; /* لتمكين وضع النص فوق الصورة */
+    display: flex; /* يجعل الحاوية بحجم الصورة */
+  }
+  
+  .text-overlay {
+    position: absolute; /* يسمح بوضع النص فوق الصورة */
+    top: 50%; /* يجعل النص في منتصف الصورة رأسيًا */
+    left: 80%; /* يجعل النص في منتصف الصورة أفقيًا */
+    transform: translate(-50%, -50%); /* يحسن المحاذاة عن طريق تحريك النص لمركز الحاوية */
+    color: #fff; /* لون النص */
+   
+    font-size: 1.2em; /* حجم النص */
+  }
+
+  
+  .menu ul {
+    display: flex;
+    position: absolute;
+    left: 70%;
+    top: 9%;
+    transform: translate(-50%, -50%);
+    margin-left: -80px;
+  }
+  li {
+    list-style: none;
+  }
+  .menu a {
+    position: relative;
+    text-decoration: none;
+    width: 180px;
+    height: 10px;
+    text-align: center;
+    line-height: 120px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  .menu a:last-child {
+    margin-left: 50px;
+  }
+  .menu a svg,
+  .menu a svg rect {
+    position: absolute;
+    left: -1px;
+    width: 80px;
+    height: 100px;
+    fill: transparent;
+  }
+  .menu a svg rect {
+    stroke: #fcfafa;
+    stroke-width: 3;
+    transition: 0.30s;
+    stroke-dasharray: 70, 402;
+    stroke-dashoffset: 280;
+  }
+  .menu a:hover svg rect {
+    stroke-dasharray: 500, 500;
+    stroke-dashoffset: 0;
+    stroke: #00c3ff;
+    fill: rgba(0, 250, 255, 0.2);
+    color: #fff;
+   }
+
+   .upload-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .upload-btn:hover {
+    background-color: #0056b3;
+  }
+
+  #file-input {
+    display: none;   
+  }
+  footer {
+    background: #99a4bb;
+    color: #121111;
+    padding: 20px 0;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* تعديل لتوسيع المحتوى إلى المنتصف */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info, .site-content {
+  width: 45%;
+  text-align: center; /* محاذاة النص إلى المنتصف */
+}
+
+.h33 {
+  border-bottom: 2px solid #0e0d0d;
+  padding-bottom: 10px;
+  font-size: 1.5em; /* زيادة حجم الخط */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  color: #0e0d0d;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.logo img {
+   
+  position: fixed; /* جعل الهيدر ثابت في الأعلى */
+  top: 6%; /* تحديد موقعه في الأعلى */
+  left: 50px; /* تحديد موقعه في اليسار */
+  right: 0; /* تحديد موقعه في اليمين */
+  z-index: 1000;
+  width: 100px; /* عرض الصورة */
+  height: 100px; /* ارتفاع الصورة */
+  border-radius: 50%; /* تحويل الصورة إلى دائرة */
+  object-fit: cover; /* لضمان ملاءمة الصورة داخل الدائرة */
+  transition: transform 0.5s ease; /* إضافة حركة سلسة */
+  overflow: hidden;
+  box-shadow: 0 10px 15 px rgba(0,0,0,0.5), 0 0 30px rgb(0, 255 ,255, 0.3);
+}
+
+.logo img:hover {
+  transform: rotate(30deg); /* تدوير الصورة عند التحويم */
+}
