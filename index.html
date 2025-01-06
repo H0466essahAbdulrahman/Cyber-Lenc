@@ -7,22 +7,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <div class="pag22">
     <div class="logo">
-    <img id="img" src="imagkes.png">
+    <img id="img" src="C:\Users\hessah\Downloads\imagelogo.png">
     </div>
+    <section id="section1">
   <div  class="image-container">
-    <img id="img" src="images.png">
+    <img id="img" src="C:\Users\hessah\Downloads\images1.png">
     <div class="text-overlay"> <h1>cyber lenc</h1><h3>An online platform for
          analyzing activity logs on mobile devices, designed
           to detect security threats, protect personal data, 
           and enhance device performance by identifying 
         vulnerabilities and suspicious activities</h3></div>
   </div>
-
+</sectin>
+<nav>
     <div class="menu">
         <ul>
             <li>
-                <a href="">
+                <a href="section1">
                     <svg>
                         <rect></rect>
                     </svg>
@@ -30,7 +34,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="section2">
                     <svg>
                         <rect></rect>
                     </svg>
@@ -38,32 +42,102 @@
                 </a>
             </li>
             <li>
-                <a href="logs.html">
+                <a href="file:///C:/Users/hessah/Desktop/%D9%85%D8%B4%D8%B1%D9%88%D8%B9/logs.html#">
                     <svg>
                         <rect></rect>
                     </svg>
                     analysis
                 </a>
             </li>
-            <li><a href=""><svg> <rect></rect></svg>login</a></li>
+        
         </ul>
   
 
       
     </div>
+</nav></div>
+    </main>
+   
+<section id="section2">
+    <main>
+    <div class="pag22">
+        <div class="sec">
+            <img id="img" src="C:\Users\hessah\Downloads\page22.png">
+          
+
+            <div class="containerr">
+                <button class="arrow" id="prev">←</button>
+                <div class="card" id="card">
+                    <h2 class="hh2">عنوان الكرت</h2>
+                    <p class="p2">هذا هو محتوى الكرت.</p>
+                </div>
+                <button class="arrow" id="next">→</button>
+            </div>
+        
+            <script>
+                const cards = [
+                    {
+                        title: " File and URL Scanning",
+                        content: "File Analysis - URL Analysis - Website Analysis"
+                    },
+                    {
+                        title: "Comprehensive Reports",
+                        content: "Scan Results - Positive and Negative Indicators"
+                    },
+                    {
+                        title: "Integration with Tools and Services",
+                        content: "API Support - Browser Extensions"
+                    }
+                ];
+        
+                let currentIndex = 0;
+        
+                const cardElement = document.getElementById('card');
+                const prevButton = document.getElementById('prev');
+                const nextButton = document.getElementById('next');
+        
+                function updateCard() {
+                    cardElement.innerHTML = `
+                        <h2>${cards[currentIndex].title}</h2>
+                        <p>${cards[currentIndex].content}</p>
+                    `;
+                }
+        
+                prevButton.addEventListener('click', () => {
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : cards.length - 1;
+                    updateCard();
+                });
+        
+                nextButton.addEventListener('click', () => {
+                    currentIndex = (currentIndex < cards.length - 1) ? currentIndex + 1 : 0;
+                    updateCard();
+                });
+        
+                // تحديث الكرت الأول عند تحميل الصفحة
+                updateCard();
+            </script>
+  </div>
+</div>
+</main>
+</section>
+
+
+
+   
 
     <footer>
+      
         <div class="footer-container">
             <div class="contact-info">
-                <h3 class="h33">طرق التواصل</h3>
-                <ul>
+                <h3 class="h433">طرق التواصل</h3>
+                <ul  >
                     <li>البريد الإلكتروني: example@example.com</li>
                     <li>الهاتف: +123 456 7890</li>
                     <li>العنوان: شارع المثال، المدينة، الدولة</li>
                 </ul>
             </div>
             <div class="site-content">
-                <h3 class="h33">محتوى الموقع</h3>
+                <h3 class="h433">محتوى الموقع</h3>
                 <ul>
                     <li><a href="#">الرئيسية</a></li>
                     <li><a href="#">عن الموقع</a></li>
