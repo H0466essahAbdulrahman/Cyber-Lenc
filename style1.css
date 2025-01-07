@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #4A90E2, #9B59B6);
+ 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -10,16 +10,24 @@ body {
     display: flex;
     justify-content: center
 }
+#im{
+
+
+   /* خلفية الصفحة بيضاء */
+    width: 310vh;
+    height: 120vh;
+}
+
 
 .logo img {
    
     position: fixed; /* جعل الهيدر ثابت في الأعلى */
-    top: 11%; /* تحديد موقعه في الأعلى */
-    left: 0; /* تحديد موقعه في اليسار */
+    top: 5%; /* تحديد موقعه في الأعلى */
+    left: 20px; /* تحديد موقعه في اليسار */
     right: 0; /* تحديد موقعه في اليمين */
     z-index: 1000;
-    width: 150px; /* عرض الصورة */
-    height: 150px; /* ارتفاع الصورة */
+    width: 100px; /* عرض الصورة */
+    height: 100px; /* ارتفاع الصورة */
     border-radius: 50%; /* تحويل الصورة إلى دائرة */
     object-fit: cover; /* لضمان ملاءمة الصورة داخل الدائرة */
     transition: transform 0.5s ease; /* إضافة حركة سلسة */
@@ -49,11 +57,12 @@ list-style: none;
     height: 10px;
     text-align: center;
     line-height: 120px;
+
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-transform: capitalize;
-    font-size: 22px;
-    color: #fff;
+    font-size: 20px;
+    color: #6886a5;
     letter-spacing: 2px;
   }
   .menu a:last-child {
@@ -62,18 +71,12 @@ list-style: none;
   .menu a svg,
   .menu a svg rect {
     position: absolute;
-    left: -1px;
-    width: 80px;
+    left: -5px;
+    width: 105px;
     height: 100px;
     fill: transparent;
   }
-  .menu a svg rect {
-    stroke: #fcfafa;
-    stroke-width: 3;
-    transition: 0.30s;
-    stroke-dasharray: 70, 402;
-    stroke-dashoffset: 280;
-  }
+ 
   .menu a:hover svg rect {
     stroke-dasharray: 500, 500;
     stroke-dashoffset: 0;
@@ -86,6 +89,13 @@ list-style: none;
     width: 100%; /* عرض الصورة بالكامل */
     height: 100%; /* ارتفاع الصورة بالكامل */
     object-fit: cover; /* ملاءمة الصورة للدائرة */
+     /* لضمان ملاءمة الصورة داخل الدائرة */
+   
+    overflow: hidden; /* Hides overflow */
+    position: relative; /* Allows positioning of child elements */
+    display: flex; /* Centers the image */
+    justify-content: center; /* Centers the image */
+    align-items: center; /* Centers the image */
   }
 
    #circle-container {
@@ -105,60 +115,48 @@ list-style: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.tooltip {
-    position: absolute;
-    top: 110%; /* وضع الوصف أسفل الدائرة */
-    left: 50%;
-    transform: translateX(-100%);
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    width: 200px; /* عرض المربع */
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-    z-index: 10;
-  }
 
-  .icon:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
+.icon:hover {
+  transform: rotate(30deg); /* تدوير الصورة عند التحويم */
+}
+  
 
-.container {
+.container  {
     max-width: 600px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #e4e2e2;
+    padding: 40px 230px;
+    background:rgba(235, 230, 230, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     z-index: 1;
     position: relative; 
-    left: -180px;
-    height: 30%;
-    width: 30%;
+    left: -1400px;
+    bottom: -70px;
+    height: 40%;
+    
+   
 }
 
-h1 {
-    color: #333;
-}
+
+
 
 p {
     color: #666;
+    align-items: center;
+
 }
 
 .button-container {
-    margin-top: 20px;
+    margin-top: -90px;
+    height:-50px ;
+    width: 10px;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 0px 60px;
+    margin: 20px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
@@ -191,19 +189,7 @@ p {
     position: absolute; /* لجعل الأيقونات تظهر في مواقع عشوائية */
 }
 
-footer {
-    background: #99a4bb;
-    color: #121111;
-    padding: 20px 0;
-}
 
-
-.footer-container {
-  display: flex;
-  justify-content: center; /* تعديل لتوسيع المحتوى إلى المنتصف */
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .contact-info, .site-content {
   width: 45%;
@@ -239,4 +225,64 @@ ul li a:hover {
   margin-top: 20px;
   font-size: 14px;
 }
+
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.custom-file-label.rounded-pill {
+  border-radius: 50rem;
+}
+
+.custom-file-label.rounded-pill::after {
+  border-radius: 0 50rem 50rem 0;
+  
+}
+.file-upload input[type='file'] {
+  display: none;
+ 
+}
+
+
+
+.containert{
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+.inp{
+  height: 30px;
+  width: 320px;
+  background-color: #e5ecf4;
+  border-radius: 50px;
+  border: 1px solid #6886a5;
+}
+button {
+  height: 34px;
+  width: 80px;
+  background-color: #1076e4;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+#section6::after {
+  content: '';
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  right: 0;
+  width: 1545px;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #82809c);
+
+}
+
+
 
