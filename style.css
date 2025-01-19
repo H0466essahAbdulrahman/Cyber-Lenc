@@ -1,5 +1,5 @@
 img{
-    width: 1500px; 
+    width: 1510px; 
     height: 890px;
     border: 0 solid rgba(31, 13, 13, 0.2);
 
@@ -123,7 +123,7 @@ img{
 }
 
 .h433 {
-  border-bottom: 2px solid #0e0d0d;
+  border-bottom: 2px solid #f9efef;
   padding-bottom: 10px;
   font-size: 1.5em; /* زيادة حجم الخط */
   min-height: 50px;
@@ -140,7 +140,7 @@ ul li {
 }
 
 ul li a {
-  color: #0e0d0d;
+  color: #faf1f1;
   text-decoration: none;
 }
 
@@ -173,7 +173,23 @@ ul li a:hover {
 }
 
 
-
+#Services{
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 28px;
+  align-items: center;
+  top:20px ;
+  left: 20px;
+  right: 20px;
+  font-weight: bold;
+}
+#Services1{
+position: absolute;
+   align-items: center;
+   top:1000px ;
+   left: 600px;
+  
+   
+ }
 
 
 .containerr {
@@ -251,6 +267,7 @@ ul li a:hover {
   background: linear-gradient(to top, transparent, #82809c);
 
 }
+
 #section2::after {
   content: '';
   position: absolute;
@@ -261,6 +278,10 @@ ul li a:hover {
   height: 200px;
   background: linear-gradient(to bottom, transparent, #82809c);
 
+}
+
+html {
+  scroll-behavior: smooth; /* حركة انتقالية تلقائية */
 }
 
 
