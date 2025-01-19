@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
- 
+ overflow: hidden;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -42,9 +42,9 @@ body {
 .menu ul {
 display: flex;
 position: absolute;
-left: 70%;
-top: 5%;
-transform: translate(-50%, -50%);
+left: 66%;
+top: -5%;
+
 margin-left: -80px;
 }
 li {
@@ -132,7 +132,7 @@ list-style: none;
     z-index: 1;
     position: relative; 
     left: -1400px;
-    bottom: -70px;
+    bottom: -40px;
     height: 40%;
     
    
@@ -275,7 +275,7 @@ button {
 #section6::after {
   content: '';
   position: absolute;
-  bottom: -90px;
+  bottom: -10px;
   left: 0;
   right: 0;
   width: 1545px;
