@@ -14,7 +14,7 @@
     </div>
     <section id="section1">
   <div  class="image-container">
-    <img id="img" src="images1.png">
+    <img id="img" src="C:\Users\hessah\Downloads\images1.png">
     <div class="text-overlay"> <h1>cyber lenc</h1><h3>An online platform for
          analyzing activity logs on mobile devices, designed
           to detect security threats, protect personal data, 
@@ -26,27 +26,27 @@
     <div class="menu">
         <ul>
             <li>
-                <a href="section1">
+                <a href="#section1">
                     <svg>
                         <rect></rect>
                     </svg>
-                    home
+                    HOME
                 </a>
             </li>
             <li>
-                <a href="section2">
+                <a href="#section2">
                     <svg>
                         <rect></rect>
                     </svg>
-                    about
+                    ABOUT
                 </a>
             </li>
             <li>
-                <a href="logs.html">
+                <a href="file:///C:/Users/hessah/Desktop/%D9%85%D8%B4%D8%B1%D9%88%D8%B9/logs.html#">
                     <svg>
                         <rect></rect>
                     </svg>
-                    analysis
+                    ANALYSIS
                 </a>
             </li>
         
@@ -62,10 +62,13 @@
     <main>
     <div class="pag22">
         <div class="sec">
-            <img id="img" src="page22.png">
-          
+            <img id="img" src="C:\Users\hessah\Downloads\page22.png">
+         
 
             <div class="containerr">
+                <div id="Services1">
+                <h1 id="Services">our Services</h1>
+            </div>
                 <button class="arrow" id="prev">←</button>
                 <div class="card" id="card">
                     <h2 class="hh2">عنوان الكرت</h2>
@@ -118,10 +121,24 @@
             </script>
   </div>
 </div>
+
 </main>
 </section>
 
+<script>
+    // الكود للتأكد من حركة انتقال سلسة مع منع الأخطاء
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // منع السلوك الافتراضي
 
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth', // حركة انتقالية ناعمة
+          block: 'start' // ابدأ من بداية القسم
+        });
+      });
+    });
+  </script>
 
    
 
@@ -129,21 +146,20 @@
       
         <div class="footer-container">
             <div class="contact-info">
-                <h3 class="h433">طرق التواصل</h3>
+                <h3 class="h433">Communication </h3>
                 <ul  >
-                    <li>البريد الإلكتروني: example@example.com</li>
-                    <li>الهاتف: +123 456 7890</li>
-                    <li>العنوان: شارع المثال، المدينة، الدولة</li>
+                    <li> EMAIL: example@example.com</li>
+                    <li>PHONE: +123 456 7890</li>
+                 
                 </ul>
             </div>
             <div class="site-content">
-                <h3 class="h433">محتوى الموقع</h3>
+                <h3 class="h433">Site Content</h3>
                 <ul>
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#">عن الموقع</a></li>
-                    <li><a href="#">الخدمات</a></li>
-                    <li><a href="#">التواصل</a></li>
-                    <li><a href="#">المدونة</a></li>
+                    <li><a href="#section1">HOME</a></li>
+                    <li><a href="#section2">ABOUT</a></li>
+                    <li><a href="file:///C:/Users/hessah/Desktop/%D9%85%D8%B4%D8%B1%D9%88%D8%B9/logs.html#">ANALYSIS</a></li>
+                   
                 </ul>
             </div>
         </div>
